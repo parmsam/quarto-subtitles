@@ -1,0 +1,23 @@
+---
+title: "Subtitles Example"
+format:
+  revealjs: default
+revealjs-plugins:
+  - subtitles
+---
+
+## Intro
+
+This is an example presentation that shows how to use the `subtitles` Quarto extension. Make sure you have your microphone enabled for the web page. Then start reading each slide out loud and you should see the subtitles appear at the bottom of the slide. You can try it out now. 
+
+Wicked cool, right?
+
+## How it works
+
+The `subtitles` extension uses the browser's built-in speech recognition. It listens to the audio from your microphone and transcribes it into text. The text is then displayed as subtitles at the bottom of the slide. 
+
+It will show two lines of text at a time and will scroll down as more text is added.
+
+## Using it
+
+Click `t` to toggle the subtitles on and off. You can change the keyboard shortcut by setting the option in the YAML header. See the [README](README.md) for more details and more on how to setup the extension for your Quarto RevealJS presentations.
