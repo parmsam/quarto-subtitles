@@ -19,3 +19,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Note: This project includes code from the Reveal.js library, which is licensed under the MIT License. Some portions of the code are derived from a third-party repository built on top of Reveal.js. While the original author did not specify a license for these modifications, it is assumed to fall under the same MIT License as Reveal.js due to its derivative nature.
