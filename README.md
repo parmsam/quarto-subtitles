@@ -1,6 +1,6 @@
 # Subtitles Extension For Quarto
 
-Adds subtitles to RevealJS for Quarto. This project ports the [jasonwebb/revealjs-subtitles](https://github.com/jasonwebb/revealjs-subtitles) plugin over to Quarto for RevealJS. Credit goes to him for the original plugin.
+Adds subtitles to RevealJS for Quarto. This project ports the [jasonwebb/revealjs-subtitles](https://github.com/jasonwebb/revealjs-subtitles) plugin over to Quarto. Credit goes to him for the original plugin.
 
 ## Installing
 
@@ -44,3 +44,6 @@ revealjs-plugins:
 
 Here is the source code for a minimal example: [example.qmd](example.qmd).
 
+## Disclaimer
+
+Please note that the specific modifications from the third-party repository were not explicitly licensed. Use of this code is under the assumption that it adheres to the MIT License, since Reveal.js is licensed under the MIT License.

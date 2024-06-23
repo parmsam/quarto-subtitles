@@ -1,3 +1,10 @@
+/*
+ * This file includes code derived from the Reveal.js library, which is licensed under the MIT License.
+ * Portions of this code are also derived from a third-party repository built on top of Reveal.js.
+ * The original author did not specify a license for these modifications, so it is assumed to fall under
+ * the MIT License.
+ */
+
 window.RevealSubtitles = function () {
   var keyCodes = {
     backspace: 8, tab: 9, enter: 13, shift: 16, ctrl: 17, alt: 18, pausebreak: 19, capslock: 20,
@@ -132,6 +139,8 @@ window.RevealSubtitles = function () {
               toggleVisibility();
             });
           
+          
+          
         }
       }
 
@@ -146,8 +155,30 @@ window.RevealSubtitles = function () {
       deck.on('ready', (event) => {
         setup();
         start();
-      });
 
+        const downloadButton = document.querySelector('.subtitles-dl-btn');
+        downloadButton.addEventListener('click', function () {
+          const finalTextElement = document.getElementById('final_text');
+          const interimTextElement = document.getElementById('interim_text');
+
+          const finalText = finalTextElement ? finalTextElement.innerText : '';
+          const interimText = interimTextElement ? interimTextElement.innerText : '';
+
+          const combinedText = `Final Text:\n${finalText}\n\nInterim Text:\n${interimText}`;
+
+          const blob = new Blob([combinedText], { type: 'text/plain' });
+
+          const link = document.createElement('a');
+          link.href = URL.createObjectURL(blob);
+          link.download = 'subtitles-transcript.txt';
+
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+
+          URL.revokeObjectURL(link.href);
+        });
+      });
 
     },
   };
