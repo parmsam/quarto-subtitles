@@ -21,3 +21,13 @@ It will show two lines of text at a time and will scroll down as more text is ad
 ## Using it
 
 Click `t` to toggle the subtitles on and off. You can change the keyboard shortcut by setting the option in the YAML header. See the [README](README.md) for more details and more on how to setup the extension for your Quarto RevealJS presentations.
+
+## Downloading your subtitles
+
+You can download the subtitles as a text file by adding an HTML button with the `.subtitles-dl-btn` class to your slide. You can see an example of it on this slide.
+
+<button type="button" class="subtitles-dl-btn">Download Subtitles</button>
+
+
+Click the button above. This will download a text file with the subtitles so far for the entire presentation.
+

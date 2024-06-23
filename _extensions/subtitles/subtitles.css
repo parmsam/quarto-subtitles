@@ -46,3 +46,16 @@
 #subtitles-container #subtitles #interim_text {
     opacity: .6;
 }
+
+/* add class for .subtitles-dl-button */
+
+.subtitles-dl-btn {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* set font size as default */
+    font-size: 20px;
+}
