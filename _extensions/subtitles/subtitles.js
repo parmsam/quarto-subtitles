@@ -158,26 +158,20 @@ window.RevealSubtitles = function () {
 
         const downloadButton = document.querySelector('.subtitles-dl-btn');
         downloadButton.addEventListener('click', function () {
-          // Assuming final_text and interim_text are IDs of the elements containing the transcripts
           const finalTextElement = document.getElementById('final_text');
           const interimTextElement = document.getElementById('interim_text');
 
-          // Fetch the content of these elements
           const finalText = finalTextElement ? finalTextElement.innerText : '';
           const interimText = interimTextElement ? interimTextElement.innerText : '';
 
-          // Combine final and interim texts
           const combinedText = `Final Text:\n${finalText}\n\nInterim Text:\n${interimText}`;
 
-          // Create a Blob with the combined text
           const blob = new Blob([combinedText], { type: 'text/plain' });
 
-          // Create a download link
           const link = document.createElement('a');
           link.href = URL.createObjectURL(blob);
-          link.download = 'subtitles-transcript.txt'; // Specify the file name
+          link.download = 'subtitles-transcript.txt';
 
-          // Append link to the body, trigger click, and then remove it
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
