@@ -40,6 +40,12 @@ revealjs-plugins:
     - subtitles
 ```
 
+You can download the subtitles as a text file by adding an HTML button with the `subtitles-dl-btn` class to any slide. Clicking on the button will download a text file with the subtitles so far for the entire presentation.
+
+```html
+<button type="button" class="subtitles-dl-btn">Download Subtitles</button>
+```
+
 ## Example
 
 Here is the source code for a minimal example: [example.qmd](example.qmd).
