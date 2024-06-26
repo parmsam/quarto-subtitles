@@ -5,7 +5,7 @@ Adds subtitles to RevealJS for Quarto. This project ports the [jasonwebb/revealj
 ## Installing
 
 ```bash
-quarto add parmsam/subtitles
+quarto add parmsam/quarto-subtitles
 ```
 
 This will install the extension under the `_extensions` subdirectory.
