@@ -2,6 +2,10 @@
 
 Adds subtitles to RevealJS for Quarto. This project ports the [jasonwebb/revealjs-subtitles](https://github.com/jasonwebb/revealjs-subtitles) plugin over to Quarto. Credit goes to [Jason Webb](https://github.com/jasonwebb) for the original plugin.
 
+Here's an example of what this extension look likes. Subtitles are added in real-time as you speak in a grey box at the bottom of the slide.
+
+<img src="example.png" alt="Example of Subtitles Extension" width="70%"/>
+
 ## Installing
 
 ```bash
