@@ -37,7 +37,7 @@ You can change these settings in your YAML header like this:
 title: My Presentation
 format:
     revealjs:
-    subtitles:
+      subtitles:
         toggleKey: 's'
         isVisible: true
 revealjs-plugins:
