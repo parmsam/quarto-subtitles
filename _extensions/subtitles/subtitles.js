@@ -82,7 +82,11 @@ window.RevealSubtitles = function () {
       function setup() {
         if (!('webkitSpeechRecognition' in window)) {
           console.log('Speech recognition not supported. Use Chrome instead.');
-
+        }
+        else if (
+          window.Reveal.isSpeakerNotes() === true
+        ) {
+          console.log("Speaker view window detected. Subtitles disabled in speaker view window.");
         } else {
           recognition = new webkitSpeechRecognition();
           recognition.continuous = true;
