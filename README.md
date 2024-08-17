@@ -1,11 +1,15 @@
 # Subtitles Extension For Quarto
 
-Adds subtitles to RevealJS for Quarto. This project ports the [jasonwebb/revealjs-subtitles](https://github.com/jasonwebb/revealjs-subtitles) plugin over to Quarto. Credit goes to him for the original plugin.
+Adds subtitles to RevealJS for Quarto. This project ports the [jasonwebb/revealjs-subtitles](https://github.com/jasonwebb/revealjs-subtitles) plugin over to Quarto. Credit goes to [Jason Webb](https://github.com/jasonwebb) for the original plugin.
+
+Subtitles are added in real-time as you speak in a grey box at the bottom of the slide. Here's an example of what this extension looks likes:
+
+<img src="example.png" alt="Example of Subtitles Extension" width="70%"/>
 
 ## Installing
 
 ```bash
-quarto add parmsam/subtitles
+quarto add parmsam/quarto-subtitles
 ```
 
 This will install the extension under the `_extensions` subdirectory.
@@ -33,11 +37,17 @@ You can change these settings in your YAML header like this:
 title: My Presentation
 format:
     revealjs:
-    subtitles:
+      subtitles:
         toggleKey: 's'
         isVisible: true
 revealjs-plugins:
     - subtitles
+```
+
+You can download the subtitles as a text file by adding an HTML button with the `subtitles-dl-btn` class to any slide. Clicking on the button will download a text file with the subtitles so far for the entire presentation.
+
+```html
+<button type="button" class="subtitles-dl-btn">Download Subtitles</button>
 ```
 
 ## Example
